@@ -1,0 +1,14 @@
+td#number {
+    text-align: center;
+}
+body {
+    background-color: #545521;
+}
+span {
+    font-size: 14pt;
+    font-weight: bolder;
+}
+table {
+    background-color: #000000;
+    color: #FFFFFF;
+}

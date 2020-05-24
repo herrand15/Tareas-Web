@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formularios - ejemplo</title>
+        <link rel="stylesheet" href="./formulario3.css" />
+    </head>
+    <body>
+        <form
+            method="POST"
+            action="mailto:20165239@ce.pucmm.edu.do"
+            enctype="text/plain"
+            name= "miformulario"
+        >
+            <b>Datos personales</b> <br />
+            Nombre:
+            <input type="text" name="nombre" size="20" maxlength="40" /><br />
+            Apellidos:
+            <input type="text" name="apellidos" size="10" maxlength="40" />
+            <br />
+            <br />
+
+            <b>Indica un pseudonimo y una contraseña</b> <br />
+            Pseudonimo:
+            <input type="text" name="pseudo" size="16" maxlength="16" /><br />
+            Contraseña:
+            <input type="text" name="contraseña" size="12" maxlength="12" />
+            <br />
+            <br />
+
+            <br />
+            <br />
+            <b>Otros datos:</b> <br />
+            <table>
+                <tr>    
+                    <td>    
+                        Edad <br />
+                        <input
+                            type="checkbox"
+                            name="0"
+                            value="deporte"
+                            checked
+                        />0 - 10<br />
+                        <input
+                            type="checkbox"
+                            name="1"
+                            value="musica"
+                        />11 - 20<br />
+                        <input
+                            type="checkbox"
+                            name="2"
+                            value="lectura"
+                        />21 - 30<br />
+                        <input type="checkbox" name="4" value="pesca" />31
+                        - 40<br />
+                    </td>
+                    <td>
+                        Donde vives ?<br />
+                        <input
+                            type="checkbox"
+                            name="santi"
+                            value="deporte"
+                            checked
+                        />Santiago<br />
+                        <input
+                            type="checkbox"
+                            name="sd"
+                            value="musica"
+                        />Santo Domingo<br />
+                        <input
+                            type="checkbox"
+                            name="lr"
+                            value="lectura"
+                        />La Romana<br />
+                        <input
+                            type="checkbox"
+                            name="sc"
+                            value="pesca"
+                        />San Cristobal<br />
+                        <input type="checkbox" for="name2">Otro</input>
+                        <input id="name2" name="name2" />
+                    </td>
+                    <td>
+                        Aficiones<br />
+                        <input
+                            type="checkbox"
+                            name="mus"
+                            value="deporte"
+                            checked
+                        />Musica<br />
+                        <input
+                            type="checkbox"
+                            name="dep"
+                            value="musica"
+                        />Deportes<br />
+                        <input
+                            type="checkbox"
+                            name="pin"
+                            value="lectura"
+                        />Pintura<br />
+                        <input
+                            type="checkbox"
+                            name="Lec"
+                            value="pesca"
+                        />Lectura<br />
+                        <input type="checkbox" for="name2">Otras</input>
+                        <input id="name2" name="name2" />
+
+                    </td>
+
+
+
+                    
+                    <br />
+                </tr>
+            </table>
+            <br />
+
+            <input type="submit" value="enviar datos" />
+            <input type="reset" value="borrar datos" /><br /><br />
+        </form>
+    </body>
+</html>

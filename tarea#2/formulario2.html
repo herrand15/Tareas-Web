@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formularios - ejemplo</title>
+        <link rel="stylesheet" href="./formulario2.css" />
+    </head>
+    <body>
+        <form method="POST" action="mailto:20165239@ce.pucmm.edu.do" enctype="text/plain">
+           Escribe tu nombre: <br />
+            <input type="text" name="nombre" size="20" maxlength="40" /><br /><br />Introduce tu contraseña: 
+            <input type="text" name="contraseña" size="10" maxlength="40" /> <br />
+            <br />
+            <label for="img">Envíame una foto tuya:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <br />
+            <br />
+            
+            Este manual te parece:<br />
+            <input type="checkbox" name="aficion" value="deporte" checked />Muy bueno<br />
+            <input type="checkbox" name="aficion" value="musica" />Bueno<br />
+            <input type="checkbox" name="aficion" value="lectura" />Malo<br />
+            <input type="checkbox" name="aficion" value="pesca" />Muy malo<br />
+            <br />
+            <br />
+
+            <input type="radio" name="tema" value="arte" />Enviarme actualizaciones<br />
+            <br />
+    
+            <input type="submit" value="enviar datos" />
+            <input type="reset" value="borrar datos" /><br /><br />
+        </form>
+    </body>
+</html>
