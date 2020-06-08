@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script>
+			function area()
+			{
+				var base,alt, result;
+			    base = Number(document.getElementById("bas").value);
+				alt =  Number(document.getElementById("alt").value);
+
+                result = (base * alt) / 2;
+				
+					window.alert("El area es " + result + " unidades cuadradas");
+			}
+		</script>
+	</head>
+	<body>
+        <a href="area.html"> Inicio</a>
+		<h1>Area de un triangulo</h1>
+		<hr color="cyan">
+		<br>
+		Digite longitud de la base: <input type="number" id="bas"></input><br>
+		Digite la longitud de la altura: <input type="number" id="alt"></input><br>
+		<hr color="cyan">
+		<button onclick="area()">Calcular area</button>
+	</body>
+</html>
