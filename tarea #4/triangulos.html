@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<script>
+			function trian()
+			{
+				var num1, num2, num3, num12, num22, num32, num13, num23, num33, num14, num24, num34;
+                var iso = 0, esc = 0, eq = 0, t1, t2, t3, t4, menos;
+				num1 = Number(document.getElementById("num1").value);
+				num2 = Number(document.getElementById("num2").value);
+				num3 = Number(document.getElementById("num3").value);
+                num12 = Number(document.getElementById("num12").value);
+				num22 = Number(document.getElementById("num22").value);
+				num32 = Number(document.getElementById("num32").value);
+                num13 = Number(document.getElementById("num13").value);
+				num23 = Number(document.getElementById("num23").value);
+				num33 = Number(document.getElementById("num33").value);
+                num14 = Number(document.getElementById("num14").value);
+				num24 = Number(document.getElementById("num24").value);
+				num34 = Number(document.getElementById("num34").value);
+
+                //triangulo 1
+                if(num1 === num2 && num2 === num3 ){
+                    eq = eq+1;
+                    t1 = "equilatero"
+                }
+                else if( ((num1-num2) != (num2-num3)) && ( (num1 === num2) | (num2 === num3) | (num1 === num3))  ){
+                    iso = iso+1;;
+                    t1 = "isosceles";
+                }
+                else if(num1 != num2 && num1 != num3 && num2 != num3){
+                    esc = esc+1;
+                    t1= "escaleno";
+                }
+                //triangulo 2
+                if(num12 === num22 && num2 === num32 ){
+                    eq = eq+1;
+                    t2 = "equilatero"
+                }
+                else if( ((num12-num22) != (num22-num32)) && ( (num12 === num22) | (num22 === num32) | (num12 === num32))  ){
+                    iso = iso+1;
+                    t2 = "isosceles";
+                }
+                else if(num12 != num22 && num12 != num32 && num22 != num32){
+                    esc = esc+1;
+                    t2= "escaleno";
+                }
+                //triangulo 3
+                if(num13 === num23 && num23 === num33 ){
+                    eq = eq+1;
+                    t3 = "equilatero"
+                }
+                else if( ((num13-num23) != (num23-num33)) && ( (num13 === num23) | (num23 === num33) | (num13 === num33))  ){
+                    iso = iso+1;
+                    t3 = "isosceles";
+                }
+                else if(num13 != num23 && num13 != num33 && num23 != num33){
+                    esc = esc+1;
+                    t3= "escaleno";
+                }
+                //triangulo 4
+                if(num14 === num24 && num24 === num34 ){
+                    eq = eq+1;
+                    t4 = "equilatero"
+                }
+                else if( ((num14-num24) != (num24-num34)) && ((num14 === num24) | (num24 === num34) | (num14 === num34))  ){
+                    iso = iso+1;
+                    t4 = "isosceles";
+                }
+                else if(num14 != num24 && num14 != num34 && num24 != num34){
+                    esc = esc+1;
+                    t4= "escaleno";
+                }
+
+                if(eq < iso && eq < esc){
+                    menos = "equilatero";
+                }
+                else if(iso < esc && iso < eq){
+                    menos="isosceles";
+                }
+                else{
+                    menos = "escaleno";
+                }
+
+                window.alert("Triangulo 1: " + t1 + "\n Triangulo 2: " + t2 + "\n Triangulo 3: " + t3 + "\n Triangulo 4: " + 
+                t4 + "\n Equilateros: " + eq + "\n Isosceles: " + iso + "\n Escalenos: " + esc + "\n Menor cantidad: " + menos );
+
+              
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Ingrese lados de los triangulos</h1>
+		<hr color="cyan">
+		<br>
+		Lado 1: <input type="number" id="num1"></input>
+		Lado 2: <input type="number" id="num2"></input>
+		Lado 3: <input type="number" id="num3"></input>
+        <hr color="cyan">
+        <br />
+        Lado 1: <input type="number" id="num12"></input>
+		Lado 2: <input type="number" id="num22"></input>
+        Lado 3: <input type="number" id="num32"></input>
+        <hr color="cyan">
+        <br />
+        Lado 1: <input type="number" id="num13"></input>
+		Lado 2: <input type="number" id="num23"></input>
+        Lado 3: <input type="number" id="num33"></input>
+        <hr color="cyan">
+        <br />
+        Lado 1: <input type="number" id="num14"></input>
+		Lado 2: <input type="number" id="num24"></input>
+        Lado 3: <input type="number" id="num34"></input>
+        <hr color="cyan">
+        <br />
+
+
+		<button onclick="trian()">Verificar triangulos</button>
+	</body>
+</html>

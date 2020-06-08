@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			function tran()
+			{
+				var num1;
+				pal = String(document.getElementById("pal").value);
+				
+
+                
+                if(pal==="casa"){
+                    window.alert("traducción: house");
+                    return;
+                }
+
+				else if(pal==="mesa")
+				{
+					window.alert("traducción: table");
+				}
+				else if(pal==="perro")
+				{
+					window.alert("traduccion: dog");
+				}
+				else if(pal==="gato")
+				{
+					window.alert("traducción: cat");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Ingrese una palabra</h1>
+		<hr color="cyan">
+		<br>
+		Escriba 1 palabra: <input type="text" id="pal"></input><br>
+		<hr color="cyan">
+		<button onclick="tran()">Traducir</button>
+	</body>
+</html>

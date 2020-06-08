@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			function len()
+			{
+				var num1;
+				num1 = Number(document.getElementById("num1").value);
+				
+
+                
+                if(num1 < 0){
+                    window.alert(" No puede ingresar numeros negativos");
+                    return;
+                }
+
+				if(num1.toString().length === 1)
+				{
+					window.alert("Tiene 1 digito");
+				}
+				else if(num1.toString().length === 2)
+				{
+					window.alert("Tiene 2 digitos");
+				}
+				else if(num1.toString().length === 3)
+				{
+					window.alert("Tiene 3 digitos");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Calcular cantidad de cifras</h1>
+		<hr color="cyan">
+		<br>
+		Digite numero 1: <input type="text" maxlength="3" id="num1"></input><br>
+		<hr color="cyan">
+		<button onclick="len()">Verificar cantidad de digitos</button>
+	</body>
+</html>
